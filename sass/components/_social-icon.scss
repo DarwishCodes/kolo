@@ -1,0 +1,27 @@
+.social-icon {
+
+
+    &__wrap {
+        display: flex;
+    }
+
+    &__link {
+        position: relative;
+        background-color: rgba($color-white, 0.7);
+        padding: 2.3rem;
+        border-radius: 50%;
+        border: 2px solid rgba($color-primary, 1);
+        margin: 0 0.5rem;
+        background-color: transparent;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 2rem;
+        height: 2rem;
+        fill: rgba($color-primary, 1);
+    }
+}

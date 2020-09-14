@@ -1,0 +1,38 @@
+.counter {
+    width: 60%;
+    padding: 2rem 0;
+    box-shadow: 0rem 2rem 3rem rgba($color-grey-dark, 0.2);
+    border-radius: 20px;
+
+
+    &__icon {
+        fill: rgba($color-primary, 1);
+        display: block;
+        margin: 0 auto;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &__title {
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: rgba($color-primary, 1);
+    }
+
+    &__digit-block {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__digit {
+        background-color: rgba($color-primary, 0.2);
+        padding: 1.2rem 1.3rem;
+        margin: 0 0.4rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        border-radius: 5px;
+        color: rgba($color-primary, 1);
+    }
+}

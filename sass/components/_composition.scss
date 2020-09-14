@@ -1,0 +1,64 @@
+.composition {
+    position: relative;
+
+    &__shape {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            border-radius: none;
+        }
+
+        &--p1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &--p2 {
+            position: absolute;
+            top: 10rem;
+            left: 23%;
+        }
+
+        &--p3 {
+            position: absolute;
+            top: 30rem;
+            left: 4%;
+        }
+
+        &--p4 {
+            position: absolute;
+            top: 50rem;
+            left: 50%;
+        }
+        
+        &--p5 {
+            position: absolute;
+            top: 26rem;
+            left: 29%;
+        }
+        
+        &--p6 {
+            position: absolute;
+            top: 10rem;
+            left: 50%;
+        }
+
+        &--p7 {
+            position: absolute;
+            top: 50rem;
+            left: 10%;
+        }
+    }
+
+    &__image {
+        height: 100%;
+        transform: translateX(-3rem);
+    }
+}

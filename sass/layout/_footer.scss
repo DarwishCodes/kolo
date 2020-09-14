@@ -1,0 +1,26 @@
+.footer {
+    padding: 15rem 0;
+    background-color: rgba($color-primary-light, 1);
+
+    &__info {
+        margin-bottom: 2rem;
+
+
+        li {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+    }
+
+    &__links {
+        margin-bottom: 2rem; 
+    }
+
+    &__link {
+        display: block;
+        text-transform: uppercase;
+        color: $color-primary;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+}

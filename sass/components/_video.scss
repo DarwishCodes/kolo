@@ -1,0 +1,79 @@
+.video {
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+    margin: 0 5rem;
+
+    
+    &__container {
+        overflow-x: scroll;
+        display: flex;
+    }
+
+    &__image {
+        height: 53rem;
+        border-radius: 5px;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        z-index: 10;
+    }
+
+    &__title-date {
+        font-size: 1.6rem;
+        color: rgba($color-white, 1);
+        font-weight: 500;
+    }
+
+    &__title {
+        font-size: 2.1rem;
+        color: rgba($color-white, 1);
+
+    }
+
+    &__play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: inline-block;
+        background-color: rgba($color-white, 0.7);
+        padding: 4rem;
+        border-radius: 50%;
+        z-index: 10;
+        transition: all 0.3s;
+    }
+
+    &__play-button-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 2rem;
+        height: 2rem;
+        fill: rgba($color-primary, 1);
+    }
+
+    &__overlay-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 99%;
+        width: 100%;
+        background-color: rgba($color-white, 0.3);
+        border-radius: 5px;
+        z-index: 5;
+        transition: all 0.3s;
+    }
+
+    &:hover &__overlay-gradient {
+        background-color: rgba($color-grey-dark, 0.4);
+    }
+
+    &:hover &__play-button {
+        background-color: rgba($color-white, 1);
+    }
+}
